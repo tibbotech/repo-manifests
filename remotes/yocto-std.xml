@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="yo" fetch="https://git.yoctoproject.org" />
+  <remote name="oe" fetch="https://git.openembedded.org" />
+  <remote name="qt" fetch="https://github.com/meta-qt5" />
+  <!-- master is better, case they are not in sync with OE, moving slower -->
+  <remote name="oa" fetch="https://github.com/OpenAMP" revision="master"/>
+</manifest>

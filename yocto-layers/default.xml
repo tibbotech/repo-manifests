@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="dunfell" sync-j="4" />
+
+  <include name="remotes/tibbo.xml" />
+  <include name="remotes/yocto-std.xml" />
+
+  <project name="meta-sunplus" path="tibbo/meta-sunplus" remote="tibbo"/>
+  <project name="meta-tibbo" path="tibbo/meta-tibbo" remote="tibbo" />
+
+  <project name="bitbake" path="tibbo/bitbake" remote="oe" revision="1.46"/>
+  <project name="meta-openembedded" path="tibbo/meta-openembedded" remote="oe" />
+  <project name="openembedded-core" path="tibbo/openembedded-core" remote="oe" />
+  <project name="meta-qt5" path="tibbo/meta-qt5" remote="qt" />
+  <!-- optional -->
+  <project name="meta-openamp" path="tibbo/meta-openamp" remote="oa" />
+
+</manifest>
