@@ -5,14 +5,14 @@
   <include name="remotes/tibbo.xml" />
   <include name="remotes/yocto-std.xml" />
 
-  <project name="meta-sunplus" path="tibbo/meta-sunplus" remote="tibbo"/>
-  <project name="meta-tibbo" path="tibbo/meta-tibbo" remote="tibbo" />
+  <project name="meta-sunplus" path="layers/meta-sunplus" remote="tibbo"/>
+  <project name="meta-tibbo" path="layers/meta-tibbo" remote="tibbo" />
 
-  <project name="bitbake" path="tibbo/bitbake" remote="oe" revision="1.46"/>
-  <project name="meta-openembedded" path="tibbo/meta-openembedded" remote="oe" />
-  <project name="openembedded-core" path="tibbo/openembedded-core" remote="oe" />
-  <project name="meta-qt5" path="tibbo/meta-qt5" remote="qt" />
+  <project name="bitbake" path="layers/bitbake" remote="oe" revision="1.46"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" />
+  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" />
+  <project name="meta-qt5" path="layers/meta-qt5" remote="qt" />
   <!-- optional -->
-  <project name="meta-openamp" path="tibbo/meta-openamp" remote="oa" />
+  <project name="meta-openamp" path="layers/meta-openamp" remote="oa" />
 
 </manifest>
