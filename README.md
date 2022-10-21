@@ -10,8 +10,7 @@ clone.sh: Helper script for automated REPOs setup
 
 ## Setting up Tibbo REPOs with helper script
 ```
-curl https://raw.githubusercontent.com/tibbotech/repo-manifests/master/clone.sh > ./clone.sh && chmod 0755 ./clone.sh
-clone.sh
+curl https://raw.githubusercontent.com/tibbotech/repo-manifests/master/clone.sh > ./clone.sh && chmod 0755 ./clone.sh && ./clone.sh
 ```
 
 ## Setting up REPO tool and repos manually
