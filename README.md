@@ -3,13 +3,14 @@
 ### Folders Description
 
 [remotes](remotes/): General include files
+
 [yocto-layers](yocto-layers/): Yocto/OE Linux, BSP and Apps
+
 clone.sh: Helper script for automated REPOs setup
 
 ## Setting up Tibbo REPOs with helper script
-Copy the link [clone.sh](clone.sh) to the command:
 ```
-curl <copyhere> && chmod 0755 ./clone.sh
+curl https://raw.githubusercontent.com/tibbotech/repo-manifests/master/clone.sh > ./clone.sh && chmod 0755 ./clone.sh
 clone.sh
 ```
 
