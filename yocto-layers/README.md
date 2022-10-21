@@ -50,6 +50,12 @@ and initiate the ENV for builds
 Run this command once before starting any 'bitbake ...'.
 Please, note ". " (point and space) before "layers/..".
 
+### (Optional) Adding your layer
+After "Initiate the env...":
+```
+git clone git@github.com:someproject/somelayer.git layers/meta-mylayer
+bitbake-layers add-layer ../layers/meta-mylayer/
+```
 ### Run builds in the same console session
 ```
 bitbake ...
