@@ -1,5 +1,10 @@
 # Tibbo Layers
 
+**
+Skip 1~4 steps when using [automated setup](/../../) and go to 
+"Running the build" step right after running the script.
+**
+
 ## Preparing the source tree
 
 ### 1. REPO tool installation [described there](/../../)

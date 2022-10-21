@@ -1,11 +1,19 @@
 # Tibbo REPOs
------------
 
-[yocto-layers](yocto-layers/) Yocto/OE Linux, BSP and Apps
+### Folders Description
 
+[remotes](remotes/): General include files
+[yocto-layers](yocto-layers/): Yocto/OE Linux, BSP and Apps
+clone.sh: Helper script for automated REPOs setup
 
-## Setting up REPO tool
+## Setting up Tibbo REPOs with helper script
+Copy the link [clone.sh](clone.sh) to the command:
+```
+curl <copyhere> && chmod 0755 ./clone.sh
+clone.sh
+```
 
+## Setting up REPO tool and repos manually
 ```
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo3
 chmod a+x ~/bin/repo3
@@ -13,7 +21,6 @@ chmod a+x ~/bin/repo3
 ```
 
 ## Installing certain manifests
-
 ```
 repo3 init -u git@github.com:tibbotech/repo-manifests.git -m subfolder/some.xml
 repo3 sync
