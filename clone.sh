@@ -1,10 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ ! -x ~/bin/repo3 ]; then
   echo "Installing REPO tool..."
+  install -d ~/bin/
   curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo3 && \
   chmod a+x ~/bin/repo3
 fi;
+PATH=$PATH:~/bin
 
 M="${M:-default}"
 
