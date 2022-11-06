@@ -27,7 +27,7 @@ if [ "${x0}" != "${x1}" ]; then
   exit 1;
 fi;
 
-repo3 init -u git@github.com:tibbotech/repo-manifests.git -m yocto-layers/${M}.xml && \
+repo3 init -u https://github.com/tibbotech/repo-manifests.git -m yocto-layers/${M}.xml && \
 repo3 sync
 
 if [ $? -ne 0 ]; then  exit 1;  fi;
