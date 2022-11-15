@@ -18,7 +18,7 @@ Skip 1~4 steps when using [automated setup](/../../) and go to
 
 ### 2. Fetching the working tree
 ```
-repo3 init -u git@github.com:tibbotech/repo-manifests.git -m yocto-layers/default.xml
+repo3 init -u https://github.com/tibbotech/repo-manifests.git -m yocto-layers/default.xml
 repo3 sync
 patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
 ```
@@ -51,7 +51,13 @@ Run this command once before starting any 'bitbake ...'.
 Please, note ". " (point and space) before "layers/..".
 
 ### (Optional) Adding your layer
-After "Initiate the env...":
+After "Initiate the env..."
+For **public** layer:
+```
+git clone https://github.com/someproject/somelayer.git layers/meta-mylayer
+bitbake-layers add-layer ../layers/meta-mylayer/
+```
+For **private** layer:
 ```
 git clone git@github.com:someproject/somelayer.git layers/meta-mylayer
 bitbake-layers add-layer ../layers/meta-mylayer/
