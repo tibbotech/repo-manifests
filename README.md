@@ -22,7 +22,7 @@ chmod a+x ~/bin/repo3
 
 ## Installing certain manifests
 ```
-repo3 init -u git@github.com:tibbotech/repo-manifests.git -m subfolder/some.xml
+repo3 init -u https://github.com/tibbotech/repo-manifests.git -m subfolder/some.xml
 repo3 sync
 ```
 
