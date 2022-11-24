@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="tibbo" fetch="https://github.com/tibbotech" />
+  <remote name="tibbo"  fetch="https://github.com/tibbotech" />
+  <remote name="tibboS" fetch="git@github.com:tibbotech" />
 </manifest>
