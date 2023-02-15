@@ -64,3 +64,13 @@ bitbake-layers add-layer ../layers/meta-mylayer/
 ```
 MACHINE=... bitbake ...
 ```
+## Problems starting bitbake
+
+**bitbake says there are no some host apps like "strip" in its PATH**
+
+Check the requirements at [Yocto documentation](https://docs.yoctoproject.org/ref-manual/system-requirements.html#required-packages-for-the-build-host) and install essentials
+
+**bitbake says there are no /disk2**
+```
+sudo install -d -m 0777 /disk2
+```
