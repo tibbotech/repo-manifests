@@ -32,6 +32,10 @@ repo3 sync
 ```
 ln -sf `which python` `which python3`
 ```
+"python expected to exist in your system"
+```
+ln -s `which python3` /usr/bin/python
+```
 
 ## External links to REPO documentation
 
