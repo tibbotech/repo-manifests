@@ -26,6 +26,13 @@ repo3 init -u https://github.com/tibbotech/repo-manifests.git -m subfolder/some.
 repo3 sync
 ```
 
+## Problems running clone.sh
+
+"python should be a link to python3 in your system"
+```
+ln -sf `which python` `which python3`
+```
+
 ## External links to REPO documentation
 
 [git and references](https://gerrit.googlesource.com/git-repo)
