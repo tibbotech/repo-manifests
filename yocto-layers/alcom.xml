@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="dunfell" sync-j="4" />
+
+  <include name="yocto-layers/default.xml" />
+
+  <project name="meta-alcom-oac" path="layers/meta-alcom-oac" remote="tibboS" />
+
+</manifest>
