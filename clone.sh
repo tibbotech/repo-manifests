@@ -11,22 +11,11 @@ PATH=$PATH:~/bin
 
 M="${M:-default}"
 
-#hash python
-#if [ $? -ne 0 ]; then
-#  echo "python expected to exist in your system"
-#  exit 1;
-#fi;
 hash python3
 if [ $? -ne 0 ]; then
   echo "python3 expected to exist in your system"
   exit 1;
 fi;
-#x0=($(md5sum `which python`));
-#x1=($(md5sum `which python3`));
-#if [ "${x0}" != "${x1}" ]; then
-#  echo "python should be a link to python3 in your system"
-#  exit 1;
-#fi;
 
 repo3 init -u https://github.com/tibbotech/repo-manifests.git -m yocto-layers/${M}.xml && \
 repo3 sync
