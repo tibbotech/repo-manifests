@@ -18,8 +18,8 @@ if [ $? -ne 0 ]; then
 fi;
 
 repo3 init -u https://github.com/tibbotech/repo-manifests.git -m yocto-layers/${M}.xml && \
+if [ $? -ne 0 ]; then  exit 1;  fi;
 repo3 sync
-
 if [ $? -ne 0 ]; then  exit 1;  fi;
 
 patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
