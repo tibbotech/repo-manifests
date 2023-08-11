@@ -10,7 +10,7 @@
 
   <project name="bitbake" path="layers/bitbake" remote="oe" revision="1.46"/>
   <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" />
-  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" />
+  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="8280c089b0df97368476b8bc54ed758e809f42f5" />
   <project name="meta-qt5" path="layers/meta-qt5" remote="qt" />
   <!-- optional -->
   <project name="meta-openamp" path="layers/meta-openamp" remote="oa" />
