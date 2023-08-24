@@ -38,7 +38,7 @@ patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
 TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./${D}
 # there PWD=./build.tppg2
 
-install -m 0644 ../layers/meta-tibbo/build.all/site.conf conf/
+install -m 0644 ../layers/meta-tibbo/conf/templates/site.conf conf/
 
 # come back to old PWD
 cd "${P}"
