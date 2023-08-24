@@ -35,15 +35,8 @@ if [ $? -ne 0 ]; then  exit 1;  fi;
 patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
 
 # there PWD=./
-TEMPLATECONF=`pwd`/layers/meta-tibbo/build.tppg2/conf . layers/openembedded-core/oe-init-build-env ./${D}
+TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./${D}
 # there PWD=./build.tppg2
-
-# drop it soon
-if [ -d ../layers/meta-tibbo/build.tppg2/conf/multiconfig ]; then
-  install -d conf/multiconfig
-  install -D ../layers/meta-tibbo/build.tppg2/conf/multiconfig/* conf/multiconfig/
-fi;
-# drop it soon /
 
 install -m 0644 ../layers/meta-tibbo/build.all/site.conf conf/
 
