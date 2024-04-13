@@ -25,7 +25,7 @@ patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
 
 ### 3. Configuring the Tibbo Layers
 ```
-TEMPLATECONF=`pwd`/layers/meta-tibbo/build.tppg2/conf . layers/openembedded-core/oe-init-build-env ./build.tppg2
+TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./build.tppg2
 ```
 
 ### 4. Setup separate dirs for downloads and build files:
