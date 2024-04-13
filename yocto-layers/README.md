@@ -30,7 +30,7 @@ TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-
 
 ### 4. Setup separate dirs for downloads and build files:
 ```
-install -m 0644 ../layers/meta-tibbo/build.all/site.conf conf/
+install -m 0644 ../layers/meta-tibbo/conf/templates/site.conf conf/
 ```
 Check the pathes defined at conf/site.conf
 
