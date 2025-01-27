@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="kirkstone" sync-j="4" />
+
+  <include name="remotes/tibbo.xml" />
+  <include name="remotes/yocto-std.xml" />
+
+  <include name="yocto-layers/sunplus-kirkstone.xml" />
+
+  <project name="meta-tibbo" path="layers/meta-tibbo" remote="tibbo" revision="dunfell" />
+  <project name="meta-qt5" path="layers/meta-qt5" remote="qt" />
+  <!-- optional -->
+  <project name="meta-openamp" path="layers/meta-openamp" remote="oa" />
+
+</manifest>

@@ -2,7 +2,7 @@
 <manifest>
   <default revision="dunfell" sync-j="4" />
 
-  <include name="yocto-layers/default.xml" />
+  <include name="yocto-layers/tibbo-dunfell.xml" />
 
   <project name="meta-alcom-oac" path="layers/meta-alcom-oac" remote="tibboS" />
 
