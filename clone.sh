@@ -33,13 +33,16 @@ repo3 sync
 if [ $? -ne 0 ]; then  exit 1;  fi;
 
 BR=$(repo3 info meta-openembedded | grep "Manifest branch:" | sed -e 's/.*branch: //')
-patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.${BR}.patch
+if [ -e "layers/meta-tibbo/npm.${BR}.patch" ]; then
+  patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.${BR}.patch
+fi
 
-# there PWD=./
-TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./${D}
-# there PWD=./build.tppg2
-
-install -m 0644 ../layers/meta-tibbo/conf/templates/site.conf conf/
+if [ -f "layers/meta-tibbo/conf/templates/site.conf" ]; then
+  # there PWD=./
+  TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./${D}
+  # there PWD=./build.tppg2
+  install -m 0644 ../layers/meta-tibbo/conf/templates/site.conf conf/
+fi;
 
 # come back to old PWD
 cd "${P}"
