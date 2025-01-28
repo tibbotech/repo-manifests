@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default revision="dunfell" sync-j="4" />
-
-  <include name="remotes/tibbo.xml" />
-  <include name="remotes/yocto-std.xml" />
 
   <include name="yocto-layers/sunplus-dunfell.xml" />
 

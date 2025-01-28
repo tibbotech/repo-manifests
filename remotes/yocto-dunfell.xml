@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="dunfell" sync-j="4" />
+
+  <include name="remotes/yocto-std.xml" />
+
+  <project name="bitbake" path="layers/bitbake" remote="oe" revision="1.46"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" />
+  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="8280c089b0df97368476b8bc54ed758e809f42f5" />
+
+</manifest>
