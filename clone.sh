@@ -32,7 +32,8 @@ if [ $? -ne 0 ]; then  exit 1;  fi;
 repo3 sync
 if [ $? -ne 0 ]; then  exit 1;  fi;
 
-patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.dunfell.patch
+BR=$(repo3 info meta-openembedded | grep "Manifest branch:" | sed -e 's/.*branch: //')
+patch -d layers/openembedded-core/ -p0 < layers/meta-tibbo/npm.${BR}.patch
 
 # there PWD=./
 TEMPLATECONF=`pwd`/layers/meta-tibbo/conf/templates/tppg2 . layers/openembedded-core/oe-init-build-env ./${D}
